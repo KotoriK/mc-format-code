@@ -36,7 +36,7 @@ console.log(result)
 使用```new RichString(new RichSpan('abc'),new RichSpan({content:'def'}))```来构造```RichString```。
 调用```RichString.toFmt()```来编码成格式代码。
 调用```RichString.toHTML()```来编码HTML。
-
+//TODO：
 ### escapeSpecialChar 转义特殊字符
 部分版本的Minecraft: Java Edition仅支持ASCII字符，Unicode字符需要转换成/u****的形式才能被正常解析。
 [unicode-helper.ts](./src/unicode-helper.ts)中提供```escapeSpecialChar()```来执行转换。
