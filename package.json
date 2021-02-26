@@ -1,15 +1,22 @@
 {
-  "name": "motd-core",
-  "version": "1.0.0",
-  "description": "",
+  "name": "mc-format-code",
+  "version": "0.1.0",
+  "description": "A TypeScript-written library for process of Minecraft Formatting Code.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "compile": "tsc"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "Minecraft",
+    "format code",
+    "motd"
+  ],
+  "author": {
+    "name": "KotoriK",
+    "url": "https://github.com/KotoriK/"
+  },
+  "license": "MIT",
   "dependencies": {
     "decamelize": "^5.0.0"
   },
