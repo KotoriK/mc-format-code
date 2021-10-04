@@ -14,7 +14,7 @@ export class Color {
         return { color: this.cssForeColor, textShadow: `1px 0.2px ${this.cssBackColor}` }
     }
 }
-export const _colors_basic: Record<Exclude<UsableColors_JE, 'gold'> | 'empty', Color | undefined> = {
+const _colors_basic: Record<Exclude<UsableColors_JE, 'gold'> | 'empty', Color | undefined> = {
     empty: undefined,
     black: new Color('black', '0', '#000000', '#000000'),
     dark_blue: new Color('dark_blue', '1', '#0000AA', '#00002A'),
@@ -47,14 +47,13 @@ export const ColorsBE: Record<UsableColors_BE | 'empty', Color | undefined> = {
  */
 export function switchColors(BEJE: boolean = false) {
     if (BEJE === true) {
-        _usingColors = ColorsJE
+        Colors = ColorsJE
     } else {
-        _usingColors = ColorsBE
+        Colors = ColorsBE
     }
 }
-let _usingColors: Record<UsableColors_BE | 'empty', Color | undefined> | Record<UsableColors_JE | 'empty', Color | undefined> = ColorsBE
 /**当前正在使用的色彩映射 */
-const Colors = new Proxy(_usingColors, { set: () => false/**failed directly */ })/**使用只读代理防止被更改 */
+let Colors: Record<UsableColors_BE | 'empty', Color | undefined> | Record<UsableColors_JE | 'empty', Color | undefined> = ColorsBE
 export { Colors }
 export type UsableColors_JE = 'black' | 'dark_blue' | 'dark_green' | 'dark_aqua'
     | 'dark_red' | 'dark_purple' | 'gold' | 'gray' | 'dark_gray'
