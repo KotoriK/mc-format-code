@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "decamelize": "^6.0.0"
+    "decamelize": "^5.0.1"
   },
   "devDependencies": {
     "@types/jest": "^27.0.2",

@@ -1125,10 +1125,10 @@
   dependencies:
     "ms" "2.1.2"
 
-"decamelize@^6.0.0":
-  "integrity" "sha1-jK1NkW/eXEGiZKQ9DsxW/j0xdJ4="
-  "resolved" "https://registry.npmmirror.com/decamelize/download/decamelize-6.0.0.tgz?cache=0&sync_timestamp=1633055760479&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fdecamelize%2Fdownload%2Fdecamelize-6.0.0.tgz"
-  "version" "6.0.0"
+"decamelize@^5.0.1":
+  "integrity" "sha1-2xGpLljHQe8zn7Ciho2KBqmnsek="
+  "resolved" "https://registry.npmmirror.com/decamelize/download/decamelize-5.0.1.tgz?cache=0&sync_timestamp=1633055760479&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fdecamelize%2Fdownload%2Fdecamelize-5.0.1.tgz"
+  "version" "5.0.1"
 
 "decimal.js@^10.2.1":
   "integrity" "sha1-2MOkRKnGd0umDKatcmHDqU/V54M="
