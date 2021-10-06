@@ -44,7 +44,7 @@ export const decoration2FmcMap = {
     [DecorationType.BOLD]: 'l',
     [DecorationType.DELETE_LINE]: 'm',
     [DecorationType.ITALIC]: 'o',
-    [DecorationType.OBUFUSCATED]: 'k',
+    [DecorationType.OBFUSCATED]: 'k',
     [DecorationType.UNDER_LINE]: 'n'
 }
 export const getFmc = (type: DecorationType) => '§' + decoration2FmcMap[type]
@@ -66,8 +66,8 @@ export function addDecoration(to: Decorations, from: Decorations) {
     }
 }
 export const getEmptyDecoration = () => new Array(DECORATE_TYPE_COUNT).fill(false)
-export function decorations2Styles(decorations: Decorations|undefined): CSSProperties|undefined {
-    if(decorations==undefined)return
+export function decorations2Styles(decorations: Decorations | undefined): CSSProperties | undefined {
+    if (decorations == undefined) return
     const entries = []
     if (decorations[DecorationType.BOLD] === true) entries.push(["textWeight", "bold"])
     if (decorations[DecorationType.ITALIC] === true) entries.push(['fontStyle', 'italic'])

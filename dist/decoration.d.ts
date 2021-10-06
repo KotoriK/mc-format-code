@@ -14,10 +14,10 @@ export declare const DECORATE_TYPE_COUNT: number;
  */
 export declare type Decorations = Array<boolean>;
 export declare const decoration2FmcMap: {
-    [x: number]: string;
     0: string;
     2: string;
     1: string;
+    4: string;
     3: string;
 };
 export declare const getFmc: (type: DecorationType) => string;

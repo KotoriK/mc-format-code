@@ -40,7 +40,7 @@ exports.decoration2FmcMap = {
     [DecorationType.BOLD]: 'l',
     [DecorationType.DELETE_LINE]: 'm',
     [DecorationType.ITALIC]: 'o',
-    [DecorationType.OBUFUSCATED]: 'k',
+    [DecorationType.OBFUSCATED]: 'k',
     [DecorationType.UNDER_LINE]: 'n'
 };
 const getFmc = (type) => '§' + exports.decoration2FmcMap[type];
