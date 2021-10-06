@@ -4,7 +4,7 @@ export declare enum DecorationType {
     ITALIC = 1,
     DELETE_LINE = 2,
     UNDER_LINE = 3,
-    OBUFUSCATED = 4
+    OBFUSCATED = 4
 }
 export declare const DECORATE_TYPE_COUNT: number;
 /**
@@ -14,10 +14,10 @@ export declare const DECORATE_TYPE_COUNT: number;
  */
 export declare type Decorations = Array<boolean>;
 export declare const decoration2FmcMap: {
+    [x: number]: string;
     0: string;
     2: string;
     1: string;
-    4: string;
     3: string;
 };
 export declare const getFmc: (type: DecorationType) => string;

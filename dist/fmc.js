@@ -19,12 +19,14 @@ function _isArrayAllFalse(array) {
     return true;
 }
 function parseFmc(fmc) {
+    if (fmc == '')
+        return new str_1.RichString(new span_1.RichSpan(''));
     let waitForFormatCode = false;
     let waitForNextSpan = false;
-    const spans = new str_1.RichString();
     let content = '';
     let decorations = decoration_1.getEmptyDecoration();
     let color = color_1.Colors.empty;
+    const spans = new str_1.RichString();
     const pushSpan = () => {
         waitForNextSpan = false;
         const span = {

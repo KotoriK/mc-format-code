@@ -7,7 +7,7 @@ var DecorationType;
     DecorationType[DecorationType["ITALIC"] = 1] = "ITALIC";
     DecorationType[DecorationType["DELETE_LINE"] = 2] = "DELETE_LINE";
     DecorationType[DecorationType["UNDER_LINE"] = 3] = "UNDER_LINE";
-    DecorationType[DecorationType["OBUFUSCATED"] = 4] = "OBUFUSCATED";
+    DecorationType[DecorationType["OBFUSCATED"] = 4] = "OBFUSCATED";
 })(DecorationType = exports.DecorationType || (exports.DecorationType = {}));
 exports.DECORATE_TYPE_COUNT = Object.entries(DecorationType).length / 2;
 /* 代码	官方名称
