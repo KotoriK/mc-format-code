@@ -4,7 +4,7 @@ export enum DecorationType {
     ITALIC,
     DELETE_LINE,
     UNDER_LINE,
-    OBUFUSCATED,
+    OBFUSCATED,
 }
 export const DECORATE_TYPE_COUNT = Object.entries(DecorationType).length / 2
 /**
