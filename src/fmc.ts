@@ -1,4 +1,4 @@
-import { Color, ColorsBE,Colors, UsableColors_BE } from "./color"
+import { Color, ColorsBE, Colors, UsableColors_BE } from "./color"
 import { decoration2FmcMap, Decorations, DecorationType, getEmptyDecoration } from "./decoration"
 import { IRichSpan, RichSpan } from "./span"
 import { RichString } from "./str"
@@ -16,12 +16,13 @@ function _isArrayAllFalse(array: Array<boolean>) {
     return true
 }
 export function parseFmc(fmc: string) {
+    if (fmc == '') return new RichString(new RichSpan(''))
     let waitForFormatCode = false
     let waitForNextSpan = false
-    const spans = new RichString()
     let content = ''
     let decorations: Decorations = getEmptyDecoration()
     let color = Colors.empty
+    const spans = new RichString()
     const pushSpan = () => {
         waitForNextSpan = false
         const span = {
